@@ -1,8 +1,0 @@
-services:
-  nginx-web:
-    image: nginx:latest  # 使用官方的 Nginx 镜像
-    ports:
-      - "8080:80"        # 将容器的 80 端口映射到主机的 8080 端口
-    volumes:
-      - /docker/Fileserver:/usr/share/nginx/html  # 将整个目录映射到容器中的 Nginx Web 根目录
-    restart: always  # 容器停止时自动重启
